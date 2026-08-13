@@ -28,17 +28,17 @@ Analizar y delimitar una funcionalidad antes de diseñar clases o escribir códi
 
 ### 1.1 Tres hechos explícitos
 
-1. COMPLETAR
-2. COMPLETAR
-3. COMPLETAR
+1. Existe un entrenador
+2. El entrenador se encuentra con una criatura salvaje
+3. El entrenador intenta capturar a una criatura salvaje
 
 ### 1.2 Tres ambigüedades convertidas en preguntas
 
 | N.º | Expresión ambigua | Pregunta que debe responder el cliente |
 |---:|---|---|
-| 1 | COMPLETAR | COMPLETAR |
-| 2 | COMPLETAR | COMPLETAR |
-| 3 | COMPLETAR | COMPLETAR |
+| 1 | "Cercana" | ¿Qué tan cercana tiene que estar la criatura para capturarla? |
+| 2 | "Criatura salvaje" | ¿Qué tipo de criaturas salvajes existen? |
+| 3 | "Capturar" | ¿Cuáles son las probabilidades de capturar a la criatura? |
 
 ### 1.3 Supuesto provisional
 
@@ -56,18 +56,18 @@ Fórmula orientadora:
 
 ### 2.1 Actor, necesidad y objetivo
 
-**Actor principal:** COMPLETAR  
-**Necesidad:** COMPLETAR  
-**Objetivo reescrito:** COMPLETAR
+**Actor principal:** Entrenador
+**Necesidad:** Capturar a la criatura
+**Objetivo reescrito:** El entrenador tiene que capturar a la criatura salvaje para añadirla a su colección
 
 ### 2.2 Entrada, proceso y salida (EPS)
 
 #### Entradas necesarias
 
-1. COMPLETAR
-2. COMPLETAR
-3. COMPLETAR
-4. COMPLETAR
+1. Datos del entrenador
+2. Características de la criatura
+3. Cápsulas disponibles
+4. Distancia respecto a la criatura
 
 #### Proceso observable
 
@@ -185,10 +185,10 @@ Primero guarden la ficha original. La IA puede detectar vacíos y formular pregu
 
 ### 6.1 Análisis del impacto
 
-**Qué cambió:** COMPLETAR  
+**Qué cambió:** Máximo de capturas  
 **Secciones afectadas:** ENTRADA / PROCESO / SALIDA / REGLA / ALCANCE / SUPUESTO  
-**Nueva decisión:** COMPLETAR  
-**Justificación:** COMPLETAR
+**Nueva decisión:** La criatura va a la colección o a la reserva
+**Justificación:** No se pueden tener más de 6 criaturas activas en la colección
 
 ### 6.2 Actualización
 
@@ -201,8 +201,8 @@ Primero guarden la ficha original. La IA puede detectar vacíos y formular pregu
 
 ### 6.3 Nuevo criterio de aceptación
 
-**Criterio:** COMPLETAR  
-**Evidencia esperada:** COMPLETAR
+**Criterio:** Si es que se encuentran menos de 6 criaturas en la colección, se guarda allí, sino va a la reserva
+**Evidencia esperada:** En la colección hay menos de 6 criaturas activas
 
 ## 7. Ticket de salida
 
